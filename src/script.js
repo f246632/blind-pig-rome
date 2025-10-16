@@ -322,18 +322,18 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
 
-        // Update button to show the OPPOSITE language (what you can switch TO)
+        // Update button to show the language you can switch TO (opposite of current)
         const flagSpan = langToggle.querySelector('.flag');
         const langText = langToggle.querySelector('.lang-text');
 
-        if (currentLang === 'it') {
-            // Currently in Italian, show option to switch to English
-            flagSpan.textContent = '🇬🇧';
-            langText.textContent = 'EN';
-        } else {
-            // Currently in English, show option to switch to Italian
+        if (currentLang === 'en') {
+            // Currently viewing English, button shows option to switch to Italian
             flagSpan.textContent = '🇮🇹';
             langText.textContent = 'IT';
+        } else {
+            // Currently viewing Italian, button shows option to switch to English
+            flagSpan.textContent = '🇬🇧';
+            langText.textContent = 'EN';
         }
     };
 
