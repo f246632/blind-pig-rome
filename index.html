@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Blind Pig Rome - A hidden speakeasy cocktail bar in the heart of Rome. Experience prohibition-era glamour with craft cocktails, live jazz, and Italian cuisine.">
+    <title>Blind Pig Roma | Hidden Speakeasy Cocktail Bar</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Montserrat:wght@300;400;600&family=Bodoni+Moda:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="src/styles.css">
+</head>
+<body>
+    <!-- Password/Secret Knock Entrance Animation -->
+    <div id="entrance-overlay" class="entrance-overlay">
+        <div class="secret-door">
+            <div class="door-peephole"></div>
+            <h1 class="speakeasy-title">Blind Pig</h1>
+            <p class="speakeasy-subtitle">Speak Easy, Friend</p>
+            <div class="knock-sequence">
+                <p>Knock Three Times</p>
+                <div class="knock-circles">
+                    <div class="knock-circle" data-knock="1"></div>
+                    <div class="knock-circle" data-knock="2"></div>
+                    <div class="knock-circle" data-knock="3"></div>
+                </div>
+            </div>
+            <button id="enter-btn" class="enter-button">Enter the Pig</button>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <svg class="pig-logo" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="50" cy="45" r="30" fill="none" stroke="currentColor" stroke-width="2"/>
+                    <circle cx="40" cy="40" r="3" fill="currentColor"/>
+                    <circle cx="60" cy="40" r="3" fill="currentColor"/>
+                    <ellipse cx="50" cy="50" rx="8" ry="6" fill="currentColor"/>
+                    <circle cx="46" cy="48" r="2" fill="#1a1a1a"/>
+                    <circle cx="54" cy="48" r="2" fill="#1a1a1a"/>
+                    <path d="M 35 55 Q 50 65 65 55" stroke="currentColor" stroke-width="2" fill="none"/>
+                </svg>
+                <span>Blind Pig</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#cocktails">Cocktails</a></li>
+                <li><a href="#food">Food</a></li>
+                <li><a href="#events">Events</a></li>
+                <li><a href="#visit">Visit</a></li>
+            </ul>
+            <button class="reserve-btn">Reserve</button>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="glitch" data-text="BLIND PIG">BLIND PIG</h1>
+                <p class="hero-tagline">Where Secrets Are Stirred, Not Shaken</p>
+                <div class="hero-details">
+                    <div class="detail-item">
+                        <span class="icon">🍸</span>
+                        <span>500+ Spirits</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="icon">🎷</span>
+                        <span>Live Jazz</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="icon">🍕</span>
+                        <span>Italian Cuisine</span>
+                    </div>
+                </div>
+                <a href="#about" class="cta-button">Discover More</a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">01</span>
+                <h2>The Secret Behind The Door</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p class="lead">Step through our unmarked door on Via La Spezia and leave the modern world behind.</p>
+                    <p>In the heart of Rome's San Giovanni district lies a portal to the Prohibition era. Blind Pig is more than a bar—it's a time machine wrapped in velvet, lit by amber bulbs, and soundtracked by sultry jazz.</p>
+                    <p>Behind antique mirrors and art deco fixtures, our master mixologists craft liquid poetry from over 500 spirit labels. Each cocktail tells a story, each sip a secret whispered across time.</p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <span class="stat-number">1920s</span>
+                            <span class="stat-label">Era Inspired</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">500+</span>
+                            <span class="stat-label">Spirit Labels</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">17K</span>
+                            <span class="stat-label">Instagram Followers</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="image-frame">
+                        <div class="vintage-photo"></div>
+                        <p class="image-caption">Est. in the spirit of 1920s speakeasies</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cocktails Section -->
+    <section id="cocktails" class="cocktails">
+        <div class="cocktails-bg"></div>
+        <div class="container">
+            <div class="section-header light">
+                <span class="section-number">02</span>
+                <h2>Liquid Alchemy</h2>
+                <div class="section-line"></div>
+                <p class="section-subtitle">Signature cocktails crafted with passion, precision, and a pinch of prohibition-era rebellion</p>
+            </div>
+            <div class="cocktails-grid">
+                <div class="cocktail-card">
+                    <div class="card-number">01</div>
+                    <h3>The Blind Old Fashioned</h3>
+                    <p class="cocktail-description">Aged bourbon, demerara, Angostura bitters, orange twist. A timeless classic reimagined.</p>
+                    <div class="cocktail-traits">
+                        <span class="trait">Strong</span>
+                        <span class="trait">Smoky</span>
+                        <span class="trait">Classic</span>
+                    </div>
+                </div>
+                <div class="cocktail-card">
+                    <div class="card-number">02</div>
+                    <h3>Roman Negroni Sbagliato</h3>
+                    <p class="cocktail-description">Campari, sweet vermouth, prosecco. Rome's answer to Milan's "mistake."</p>
+                    <div class="cocktail-traits">
+                        <span class="trait">Bitter</span>
+                        <span class="trait">Bubbly</span>
+                        <span class="trait">Italian</span>
+                    </div>
+                </div>
+                <div class="cocktail-card">
+                    <div class="card-number">03</div>
+                    <h3>Speakeasy Sour</h3>
+                    <p class="cocktail-description">Whiskey, lemon, egg white, amaretto. Silky smooth with a secret twist.</p>
+                    <div class="cocktail-traits">
+                        <span class="trait">Sour</span>
+                        <span class="trait">Silky</span>
+                        <span class="trait">Sophisticated</span>
+                    </div>
+                </div>
+                <div class="cocktail-card">
+                    <div class="card-number">04</div>
+                    <h3>Prohibition Martini</h3>
+                    <p class="cocktail-description">Gin or vodka, dry vermouth, olive or twist. Shaken or stirred, always perfect.</p>
+                    <div class="cocktail-traits">
+                        <span class="trait">Dry</span>
+                        <span class="trait">Crisp</span>
+                        <span class="trait">Iconic</span>
+                    </div>
+                </div>
+                <div class="cocktail-card">
+                    <div class="card-number">05</div>
+                    <h3>Roman Honeymoon</h3>
+                    <p class="cocktail-description">Aperol, elderflower, prosecco, fresh herbs. Sweet romance in a glass.</p>
+                    <div class="cocktail-traits">
+                        <span class="trait">Sweet</span>
+                        <span class="trait">Floral</span>
+                        <span class="trait">Light</span>
+                    </div>
+                </div>
+                <div class="cocktail-card">
+                    <div class="card-number">06</div>
+                    <h3>Gatsby's Dream</h3>
+                    <p class="cocktail-description">Champagne, gin, lavender, lemon. Opulent, elegant, unforgettable.</p>
+                    <div class="cocktail-traits">
+                        <span class="trait">Luxurious</span>
+                        <span class="trait">Floral</span>
+                        <span class="trait">Refined</span>
+                    </div>
+                </div>
+            </div>
+            <div class="cocktails-footer">
+                <p>Our menu rotates seasonally, featuring rare spirits and house-made infusions</p>
+                <button class="secondary-btn">View Full Menu</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Food Section -->
+    <section id="food" class="food">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">03</span>
+                <h2>Prohibition Bites</h2>
+                <div class="section-line"></div>
+                <p class="section-subtitle">Gourmet Italian fare to complement your cocktails</p>
+            </div>
+            <div class="food-showcase">
+                <div class="food-column">
+                    <div class="food-item">
+                        <h4>Artisan Pizza</h4>
+                        <p>Wood-fired Neapolitan style with creative toppings</p>
+                    </div>
+                    <div class="food-item">
+                        <h4>Gourmet Sandwiches</h4>
+                        <p>Premium Italian ingredients on fresh-baked bread</p>
+                    </div>
+                    <div class="food-item">
+                        <h4>Cheese & Charcuterie</h4>
+                        <p>Curated selection of Italian meats and cheeses</p>
+                    </div>
+                </div>
+                <div class="food-visual">
+                    <div class="food-circle">
+                        <p>Kitchen Open<br>Until 1:30 AM</p>
+                    </div>
+                </div>
+                <div class="food-column">
+                    <div class="food-item">
+                        <h4>Small Plates</h4>
+                        <p>Perfect for sharing and pairing with cocktails</p>
+                    </div>
+                    <div class="food-item">
+                        <h4>Seasonal Specials</h4>
+                        <p>Chef's rotating creations using local ingredients</p>
+                    </div>
+                    <div class="food-item">
+                        <h4>Late Night Bites</h4>
+                        <p>Comfort food for the after-midnight crowd</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Events Section -->
+    <section id="events" class="events">
+        <div class="events-overlay"></div>
+        <div class="container">
+            <div class="section-header light">
+                <span class="section-number">04</span>
+                <h2>Live Entertainment</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="events-content">
+                <div class="event-feature">
+                    <div class="event-icon">🎷</div>
+                    <h3>Live Jazz Nights</h3>
+                    <p>Sultry saxophones and smooth vocals transport you to the roaring twenties. Check our social media for performance schedules.</p>
+                </div>
+                <div class="event-feature">
+                    <div class="event-icon">🎩</div>
+                    <h3>Mystery Magicians</h3>
+                    <p>Prepare to be mesmerized by impromptu magic performances that add an extra layer of wonder to your evening.</p>
+                </div>
+                <div class="event-feature">
+                    <div class="event-icon">🎭</div>
+                    <h3>Special Events</h3>
+                    <p>Private parties, cocktail masterclasses, and themed nights. Follow us for exclusive announcements.</p>
+                </div>
+            </div>
+            <div class="social-callout">
+                <p>Stay in the loop</p>
+                <div class="social-links">
+                    <a href="https://www.instagram.com/blindpigroma/" target="_blank" class="social-btn">
+                        <span>📷</span> Instagram
+                    </a>
+                    <a href="https://www.facebook.com/blindpigroma/" target="_blank" class="social-btn">
+                        <span>📘</span> Facebook
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Visit Section -->
+    <section id="visit" class="visit">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">05</span>
+                <h2>Find The Secret Door</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="visit-grid">
+                <div class="visit-info">
+                    <div class="info-block">
+                        <h3>Location</h3>
+                        <p>Via La Spezia 72<br>San Giovanni, Rome<br>00182, Italy</p>
+                        <p class="info-hint">🚇 Near Metro Lodi (Line A)</p>
+                    </div>
+                    <div class="info-block">
+                        <h3>Hours</h3>
+                        <p><strong>Daily:</strong> 18:30 - 02:00</p>
+                        <p><strong>Kitchen:</strong> Until 01:30</p>
+                        <p class="info-hint">🌙 Late night vibes guaranteed</p>
+                    </div>
+                    <div class="info-block">
+                        <h3>Contact</h3>
+                        <p>📞 <a href="tel:+390687750714">+39 06 8775 0714</a></p>
+                        <p>📧 reservations@blindpigroma.com</p>
+                        <p class="info-hint">Reservations recommended on weekends</p>
+                    </div>
+                    <div class="info-block">
+                        <h3>Follow Us</h3>
+                        <div class="social-icons">
+                            <a href="https://www.instagram.com/blindpigroma/" target="_blank">Instagram</a>
+                            <a href="https://www.facebook.com/blindpigroma/" target="_blank">Facebook</a>
+                        </div>
+                        <p class="info-hint">17K followers | 5.8K likes</p>
+                    </div>
+                </div>
+                <div class="visit-map">
+                    <div class="map-placeholder">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2971.0582!2d12.52!3d41.88!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDHCsDUyJzQ4LjAiTiAxMsKwMzEnMTIuMCJF!5e0!3m2!1sen!2sit!4v1234567890"
+                            width="100%"
+                            height="100%"
+                            style="border:0;"
+                            allowfullscreen=""
+                            loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                    <p class="map-caption">Look for the unmarked door with a small pig symbol</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <svg class="pig-logo" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="50" cy="45" r="30" fill="none" stroke="currentColor" stroke-width="2"/>
+                        <circle cx="40" cy="40" r="3" fill="currentColor"/>
+                        <circle cx="60" cy="40" r="3" fill="currentColor"/>
+                        <ellipse cx="50" cy="50" rx="8" ry="6" fill="currentColor"/>
+                        <circle cx="46" cy="48" r="2" fill="#1a1a1a"/>
+                        <circle cx="54" cy="48" r="2" fill="#1a1a1a"/>
+                        <path d="M 35 55 Q 50 65 65 55" stroke="currentColor" stroke-width="2" fill="none"/>
+                    </svg>
+                    <h3>Blind Pig Roma</h3>
+                </div>
+                <div class="footer-text">
+                    <p>"In the shadows we thrive, in secrecy we flourish."</p>
+                    <p class="footer-small">© 2025 Blind Pig Roma. All secrets reserved.</p>
+                </div>
+            </div>
+            <div class="footer-disclaimer">
+                <p>Please drink responsibly. Must be 18+ to enter.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="src/script.js"></script>
+</body>
+</html>
