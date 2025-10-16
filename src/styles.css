@@ -368,7 +368,8 @@ img {
             rgba(244, 208, 63, 0.75) 50%,
             rgba(26, 26, 26, 0.8) 100%
         ),
-        url('../assets/images/bar-bottles.jpg') center center / cover no-repeat;
+        url('../assets/images/bar-bottles.jpg') center center / cover no-repeat,
+        url('../assets/images/bar-placeholder.svg') center center / cover no-repeat;
     overflow: hidden;
 }
 

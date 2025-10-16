@@ -1,0 +1,89 @@
+<svg width="1920" height="1080" xmlns="http://www.w3.org/2000/svg">
+  <!-- Dark bar background with colorful bottle silhouettes -->
+  <defs>
+    <linearGradient id="barGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a3a2e;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0c1821;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="shelfLight" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#3eb489;stop-opacity:0.3" />
+      <stop offset="100%" style="stop-color:#16213e;stop-opacity:0.5" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1920" height="1080" fill="url(#barGrad)"/>
+
+  <!-- Shelf lighting effect -->
+  <rect y="200" width="1920" height="150" fill="url(#shelfLight)" opacity="0.6"/>
+  <rect y="450" width="1920" height="150" fill="url(#shelfLight)" opacity="0.5"/>
+  <rect y="700" width="1920" height="150" fill="url(#shelfLight)" opacity="0.4"/>
+
+  <!-- Bottle silhouettes (colorful) -->
+  <g opacity="0.6">
+    <!-- Row 1 -->
+    <rect x="100" y="230" width="30" height="100" rx="5" fill="#52b788"/>
+    <rect x="150" y="220" width="35" height="110" rx="5" fill="#219ebc"/>
+    <rect x="200" y="240" width="28" height="90" rx="5" fill="#fb8500"/>
+    <rect x="250" y="230" width="32" height="100" rx="5" fill="#d62828"/>
+    <rect x="300" y="225" width="30" height="105" rx="5" fill="#4361ee"/>
+    <rect x="350" y="235" width="33" height="95" rx="5" fill="#06ffa5"/>
+
+    <!-- More bottles across -->
+    <rect x="500" y="230" width="30" height="100" rx="5" fill="#ffba08"/>
+    <rect x="600" y="225" width="32" height="105" rx="5" fill="#bc6c25"/>
+    <rect x="700" y="240" width="28" height="90" rx="5" fill="#70e000"/>
+    <rect x="800" y="230" width="35" height="100" rx="5" fill="#ff006e"/>
+    <rect x="900" y="220" width="30" height="110" rx="5" fill="#8338ec"/>
+    <rect x="1000" y="235" width="32" height="95" rx="5" fill="#06ffa5"/>
+
+    <rect x="1200" y="230" width="30" height="100" rx="5" fill="#fb5607"/>
+    <rect x="1300" y="225" width="35" height="105" rx="5" fill="#219ebc"/>
+    <rect x="1400" y="240" width="28" height="90" rx="5" fill="#ffb703"/>
+    <rect x="1500" y="230" width="32" height="100" rx="5" fill="#d62828"/>
+    <rect x="1600" y="235" width="30" height="95" rx="5" fill="#4361ee"/>
+    <rect x="1700" y="225" width="33" height="105" rx="5" fill="#06ffa5"/>
+
+    <!-- Row 2 -->
+    <rect x="120" y="480" width="28" height="95" rx="5" fill="#023e8a"/>
+    <rect x="170" y="470" width="32" height="105" rx="5" fill="#52b788"/>
+    <rect x="220" y="490" width="30" height="85" rx="5" fill="#fb8500"/>
+    <rect x="270" y="475" width="35" height="100" rx="5" fill="#d62828"/>
+    <rect x="320" y="480" width="28" height="95" rx="5" fill="#7209b7"/>
+
+    <rect x="520" y="475" width="30" height="100" rx="5" fill="#ffba08"/>
+    <rect x="620" y="480" width="32" height="95" rx="5" fill="#bc6c25"/>
+    <rect x="720" y="470" width="35" height="105" rx="5" fill="#70e000"/>
+    <rect x="820" y="490" width="28" height="85" rx="5" fill="#ff006e"/>
+    <rect x="920" y="475" width="30" height="100" rx="5" fill="#8338ec"/>
+
+    <rect x="1220" y="480" width="32" height="95" rx="5" fill="#fb5607"/>
+    <rect x="1320" y="475" width="28" height="100" rx="5" fill="#219ebc"/>
+    <rect x="1420" y="470" width="35" height="105" rx="5" fill="#ffb703"/>
+    <rect x="1520" y="490" width="30" height="85" rx="5" fill="#d62828"/>
+    <rect x="1620" y="480" width="32" height="95" rx="5" fill="#4361ee"/>
+
+    <!-- Row 3 -->
+    <rect x="140" y="730" width="30" height="90" rx="5" fill="#023e8a"/>
+    <rect x="190" y="720" width="35" height="100" rx="5" fill="#52b788"/>
+    <rect x="240" y="735" width="28" height="85" rx="5" fill="#fb8500"/>
+    <rect x="290" y="725" width="32" height="95" rx="5" fill="#d62828"/>
+
+    <rect x="540" y="730" width="30" height="90" rx="5" fill="#ffba08"/>
+    <rect x="640" y="725" width="32" height="95" rx="5" fill="#bc6c25"/>
+    <rect x="740" y="720" width="35" height="100" rx="5" fill="#70e000"/>
+    <rect x="840" y="735" width="28" height="85" rx="5" fill="#ff006e"/>
+
+    <rect x="1240" y="730" width="30" height="90" rx="5" fill="#fb5607"/>
+    <rect x="1340" y="725" width="32" height="95" rx="5" fill="#219ebc"/>
+    <rect x="1440" y="720" width="35" height="100" rx="5" fill="#ffb703"/>
+    <rect x="1540" y="735" width="28" height="85" rx="5" fill="#4361ee"/>
+  </g>
+
+  <!-- Bar counter at bottom -->
+  <rect y="900" width="1920" height="180" fill="#2c1810" opacity="0.8"/>
+  <rect y="900" width="1920" height="20" fill="#8b6f47" opacity="0.6"/>
+
+  <!-- Text overlay -->
+  <text x="960" y="540" font-family="Arial Black" font-size="80" fill="#F4D03F" text-anchor="middle" opacity="0.3">500+ SPIRITS</text>
+</svg>
