@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Blind Pig Rome - A hidden speakeasy cocktail bar in the heart of Rome. Experience prohibition-era glamour with craft cocktails, live jazz, and Italian cuisine.">
-    <title>Blind Pig Roma | Hidden Speakeasy Cocktail Bar</title>
+    <meta name="description" content="Blind Pig Roma - Un cocktail bar speakeasy nascosto nel cuore di Roma. Vivi il glamour del proibizionismo con cocktail artigianali, jazz dal vivo e cucina italiana.">
+    <title>Blind Pig Roma | Cocktail Bar Speakeasy Nascosto</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Montserrat:wght@300;400;600&family=Bodoni+Moda:wght@400;700&display=swap" rel="stylesheet">
@@ -16,16 +16,16 @@
         <div class="secret-door">
             <div class="door-peephole"></div>
             <h1 class="speakeasy-title">Blind Pig</h1>
-            <p class="speakeasy-subtitle">Speak Easy, Friend</p>
+            <p class="speakeasy-subtitle" data-it="Parla Piano, Amico" data-en="Speak Easy, Friend">Parla Piano, Amico</p>
             <div class="knock-sequence">
-                <p>Knock Three Times</p>
+                <p data-it="Bussa Tre Volte" data-en="Knock Three Times">Bussa Tre Volte</p>
                 <div class="knock-circles">
                     <div class="knock-circle" data-knock="1"></div>
                     <div class="knock-circle" data-knock="2"></div>
                     <div class="knock-circle" data-knock="3"></div>
                 </div>
             </div>
-            <button id="enter-btn" class="enter-button">Enter the Pig</button>
+            <button id="enter-btn" class="enter-button" data-it="Entra nel Maiale" data-en="Enter the Pig">Entra nel Maiale</button>
         </div>
     </div>
 
@@ -45,14 +45,18 @@
                 <span>Blind Pig</span>
             </div>
             <ul class="nav-menu">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#cocktails">Cocktails</a></li>
-                <li><a href="#food">Food</a></li>
-                <li><a href="#events">Events</a></li>
-                <li><a href="#visit">Visit</a></li>
+                <li><a href="#home" data-it="Home" data-en="Home">Home</a></li>
+                <li><a href="#about" data-it="Chi Siamo" data-en="About">Chi Siamo</a></li>
+                <li><a href="#cocktails" data-it="Cocktail" data-en="Cocktails">Cocktail</a></li>
+                <li><a href="#food" data-it="Cibo" data-en="Food">Cibo</a></li>
+                <li><a href="#events" data-it="Eventi" data-en="Events">Eventi</a></li>
+                <li><a href="#visit" data-it="Visita" data-en="Visit">Visita</a></li>
             </ul>
-            <button class="reserve-btn">Reserve</button>
+            <button id="lang-toggle" class="lang-toggle" title="Switch Language">
+                <span class="flag">🇮🇹</span>
+                <span class="lang-text">IT</span>
+            </button>
+            <button class="reserve-btn" data-it="Prenota" data-en="Reserve">Prenota</button>
             <div class="hamburger">
                 <span></span>
                 <span></span>
@@ -67,22 +71,22 @@
         <div class="hero-content">
             <div class="hero-text">
                 <h1 class="glitch" data-text="BLIND PIG">BLIND PIG</h1>
-                <p class="hero-tagline">Where Secrets Are Stirred, Not Shaken</p>
+                <p class="hero-tagline" data-it="Dove i Segreti Sono Mescolati, Non Agitati" data-en="Where Secrets Are Stirred, Not Shaken">Dove i Segreti Sono Mescolati, Non Agitati</p>
                 <div class="hero-details">
                     <div class="detail-item">
                         <span class="icon">🍸</span>
-                        <span>500+ Spirits</span>
+                        <span data-it="500+ Distillati" data-en="500+ Spirits">500+ Distillati</span>
                     </div>
                     <div class="detail-item">
                         <span class="icon">🎷</span>
-                        <span>Live Jazz</span>
+                        <span data-it="Jazz Dal Vivo" data-en="Live Jazz">Jazz Dal Vivo</span>
                     </div>
                     <div class="detail-item">
                         <span class="icon">🍕</span>
-                        <span>Italian Cuisine</span>
+                        <span data-it="Cucina Italiana" data-en="Italian Cuisine">Cucina Italiana</span>
                     </div>
                 </div>
-                <a href="#about" class="cta-button">Discover More</a>
+                <a href="#about" class="cta-button" data-it="Scopri Di Più" data-en="Discover More">Scopri Di Più</a>
             </div>
         </div>
         <div class="scroll-indicator">
@@ -97,33 +101,33 @@
         <div class="container">
             <div class="section-header">
                 <span class="section-number">01</span>
-                <h2>The Secret Behind The Door</h2>
+                <h2 data-it="Il Segreto Dietro La Porta" data-en="The Secret Behind The Door">Il Segreto Dietro La Porta</h2>
                 <div class="section-line"></div>
             </div>
             <div class="about-grid">
                 <div class="about-text">
-                    <p class="lead">Step through our unmarked door on Via La Spezia and leave the modern world behind.</p>
-                    <p>In the heart of Rome's San Giovanni district lies a portal to the Prohibition era. Blind Pig is more than a bar—it's a time machine wrapped in velvet, lit by amber bulbs, and soundtracked by sultry jazz.</p>
-                    <p>Behind antique mirrors and art deco fixtures, our master mixologists craft liquid poetry from over 500 spirit labels. Each cocktail tells a story, each sip a secret whispered across time.</p>
+                    <p class="lead" data-it="Varchi la nostra porta senza insegna su Via La Spezia e lasci il mondo moderno alle spalle." data-en="Step through our unmarked door on Via La Spezia and leave the modern world behind.">Varchi la nostra porta senza insegna su Via La Spezia e lasci il mondo moderno alle spalle.</p>
+                    <p data-it="Nel cuore del quartiere San Giovanni di Roma si trova un portale verso l'era del Proibizionismo. Blind Pig è più di un bar: è una macchina del tempo avvolta nel velluto, illuminata da lampadine ambrate e accompagnata da jazz sensuale." data-en="In the heart of Rome's San Giovanni district lies a portal to the Prohibition era. Blind Pig is more than a bar—it's a time machine wrapped in velvet, lit by amber bulbs, and soundtracked by sultry jazz.">Nel cuore del quartiere San Giovanni di Roma si trova un portale verso l'era del Proibizionismo. Blind Pig è più di un bar: è una macchina del tempo avvolta nel velluto, illuminata da lampadine ambrate e accompagnata da jazz sensuale.</p>
+                    <p data-it="Dietro specchi antichi e arredi art déco, i nostri maestri mixologist creano poesia liquida con oltre 500 etichette di distillati. Ogni cocktail racconta una storia, ogni sorso è un segreto sussurrato attraverso il tempo." data-en="Behind antique mirrors and art deco fixtures, our master mixologists craft liquid poetry from over 500 spirit labels. Each cocktail tells a story, each sip a secret whispered across time.">Dietro specchi antichi e arredi art déco, i nostri maestri mixologist creano poesia liquida con oltre 500 etichette di distillati. Ogni cocktail racconta una storia, ogni sorso è un segreto sussurrato attraverso il tempo.</p>
                     <div class="about-stats">
                         <div class="stat">
                             <span class="stat-number">1920s</span>
-                            <span class="stat-label">Era Inspired</span>
+                            <span class="stat-label" data-it="Epoca Ispirata" data-en="Era Inspired">Epoca Ispirata</span>
                         </div>
                         <div class="stat">
                             <span class="stat-number">500+</span>
-                            <span class="stat-label">Spirit Labels</span>
+                            <span class="stat-label" data-it="Etichette Distillati" data-en="Spirit Labels">Etichette Distillati</span>
                         </div>
                         <div class="stat">
                             <span class="stat-number">17K</span>
-                            <span class="stat-label">Instagram Followers</span>
+                            <span class="stat-label" data-it="Follower Instagram" data-en="Instagram Followers">Follower Instagram</span>
                         </div>
                     </div>
                 </div>
                 <div class="about-image">
                     <div class="image-frame">
                         <div class="vintage-photo"></div>
-                        <p class="image-caption">Est. in the spirit of 1920s speakeasies</p>
+                        <p class="image-caption" data-it="Nato nello spirito degli speakeasy anni '20" data-en="Est. in the spirit of 1920s speakeasies">Nato nello spirito degli speakeasy anni '20</p>
                     </div>
                 </div>
             </div>
@@ -136,75 +140,75 @@
         <div class="container">
             <div class="section-header light">
                 <span class="section-number">02</span>
-                <h2>Liquid Alchemy</h2>
+                <h2 data-it="Alchimia Liquida" data-en="Liquid Alchemy">Alchimia Liquida</h2>
                 <div class="section-line"></div>
-                <p class="section-subtitle">Signature cocktails crafted with passion, precision, and a pinch of prohibition-era rebellion</p>
+                <p class="section-subtitle" data-it="Cocktail d'autore creati con passione, precisione e un pizzico di ribellione proibizionista" data-en="Signature cocktails crafted with passion, precision, and a pinch of prohibition-era rebellion">Cocktail d'autore creati con passione, precisione e un pizzico di ribellione proibizionista</p>
             </div>
             <div class="cocktails-grid">
                 <div class="cocktail-card">
                     <div class="card-number">01</div>
-                    <h3>The Blind Old Fashioned</h3>
-                    <p class="cocktail-description">Aged bourbon, demerara, Angostura bitters, orange twist. A timeless classic reimagined.</p>
+                    <h3 data-it="Il Blind Old Fashioned" data-en="The Blind Old Fashioned">Il Blind Old Fashioned</h3>
+                    <p class="cocktail-description" data-it="Bourbon invecchiato, zucchero demerara, Angostura, scorza d'arancia. Un classico senza tempo rivisitato." data-en="Aged bourbon, demerara, Angostura bitters, orange twist. A timeless classic reimagined.">Bourbon invecchiato, zucchero demerara, Angostura, scorza d'arancia. Un classico senza tempo rivisitato.</p>
                     <div class="cocktail-traits">
-                        <span class="trait">Strong</span>
-                        <span class="trait">Smoky</span>
-                        <span class="trait">Classic</span>
+                        <span class="trait" data-it="Forte" data-en="Strong">Forte</span>
+                        <span class="trait" data-it="Affumicato" data-en="Smoky">Affumicato</span>
+                        <span class="trait" data-it="Classico" data-en="Classic">Classico</span>
                     </div>
                 </div>
                 <div class="cocktail-card">
                     <div class="card-number">02</div>
-                    <h3>Roman Negroni Sbagliato</h3>
-                    <p class="cocktail-description">Campari, sweet vermouth, prosecco. Rome's answer to Milan's "mistake."</p>
+                    <h3 data-it="Negroni Sbagliato Romano" data-en="Roman Negroni Sbagliato">Negroni Sbagliato Romano</h3>
+                    <p class="cocktail-description" data-it="Campari, vermouth dolce, prosecco. La risposta di Roma allo 'sbaglio' di Milano." data-en="Campari, sweet vermouth, prosecco. Rome's answer to Milan's 'mistake.'">Campari, vermouth dolce, prosecco. La risposta di Roma allo "sbaglio" di Milano.</p>
                     <div class="cocktail-traits">
-                        <span class="trait">Bitter</span>
-                        <span class="trait">Bubbly</span>
-                        <span class="trait">Italian</span>
+                        <span class="trait" data-it="Amaro" data-en="Bitter">Amaro</span>
+                        <span class="trait" data-it="Frizzante" data-en="Bubbly">Frizzante</span>
+                        <span class="trait" data-it="Italiano" data-en="Italian">Italiano</span>
                     </div>
                 </div>
                 <div class="cocktail-card">
                     <div class="card-number">03</div>
-                    <h3>Speakeasy Sour</h3>
-                    <p class="cocktail-description">Whiskey, lemon, egg white, amaretto. Silky smooth with a secret twist.</p>
+                    <h3 data-it="Speakeasy Sour" data-en="Speakeasy Sour">Speakeasy Sour</h3>
+                    <p class="cocktail-description" data-it="Whiskey, limone, albume, amaretto. Vellutato con un tocco segreto." data-en="Whiskey, lemon, egg white, amaretto. Silky smooth with a secret twist.">Whiskey, limone, albume, amaretto. Vellutato con un tocco segreto.</p>
                     <div class="cocktail-traits">
-                        <span class="trait">Sour</span>
-                        <span class="trait">Silky</span>
-                        <span class="trait">Sophisticated</span>
+                        <span class="trait" data-it="Agro" data-en="Sour">Agro</span>
+                        <span class="trait" data-it="Vellutato" data-en="Silky">Vellutato</span>
+                        <span class="trait" data-it="Raffinato" data-en="Sophisticated">Raffinato</span>
                     </div>
                 </div>
                 <div class="cocktail-card">
                     <div class="card-number">04</div>
-                    <h3>Prohibition Martini</h3>
-                    <p class="cocktail-description">Gin or vodka, dry vermouth, olive or twist. Shaken or stirred, always perfect.</p>
+                    <h3 data-it="Martini del Proibizionismo" data-en="Prohibition Martini">Martini del Proibizionismo</h3>
+                    <p class="cocktail-description" data-it="Gin o vodka, vermouth dry, oliva o scorza. Shakerato o mescolato, sempre perfetto." data-en="Gin or vodka, dry vermouth, olive or twist. Shaken or stirred, always perfect.">Gin o vodka, vermouth dry, oliva o scorza. Shakerato o mescolato, sempre perfetto.</p>
                     <div class="cocktail-traits">
-                        <span class="trait">Dry</span>
-                        <span class="trait">Crisp</span>
-                        <span class="trait">Iconic</span>
+                        <span class="trait" data-it="Secco" data-en="Dry">Secco</span>
+                        <span class="trait" data-it="Deciso" data-en="Crisp">Deciso</span>
+                        <span class="trait" data-it="Iconico" data-en="Iconic">Iconico</span>
                     </div>
                 </div>
                 <div class="cocktail-card">
                     <div class="card-number">05</div>
-                    <h3>Roman Honeymoon</h3>
-                    <p class="cocktail-description">Aperol, elderflower, prosecco, fresh herbs. Sweet romance in a glass.</p>
+                    <h3 data-it="Luna di Miele Romana" data-en="Roman Honeymoon">Luna di Miele Romana</h3>
+                    <p class="cocktail-description" data-it="Aperol, fiori di sambuco, prosecco, erbe fresche. Dolce romanticismo in un bicchiere." data-en="Aperol, elderflower, prosecco, fresh herbs. Sweet romance in a glass.">Aperol, fiori di sambuco, prosecco, erbe fresche. Dolce romanticismo in un bicchiere.</p>
                     <div class="cocktail-traits">
-                        <span class="trait">Sweet</span>
-                        <span class="trait">Floral</span>
-                        <span class="trait">Light</span>
+                        <span class="trait" data-it="Dolce" data-en="Sweet">Dolce</span>
+                        <span class="trait" data-it="Floreale" data-en="Floral">Floreale</span>
+                        <span class="trait" data-it="Leggero" data-en="Light">Leggero</span>
                     </div>
                 </div>
                 <div class="cocktail-card">
                     <div class="card-number">06</div>
-                    <h3>Gatsby's Dream</h3>
-                    <p class="cocktail-description">Champagne, gin, lavender, lemon. Opulent, elegant, unforgettable.</p>
+                    <h3 data-it="Il Sogno di Gatsby" data-en="Gatsby's Dream">Il Sogno di Gatsby</h3>
+                    <p class="cocktail-description" data-it="Champagne, gin, lavanda, limone. Opulento, elegante, indimenticabile." data-en="Champagne, gin, lavender, lemon. Opulent, elegant, unforgettable.">Champagne, gin, lavanda, limone. Opulento, elegante, indimenticabile.</p>
                     <div class="cocktail-traits">
-                        <span class="trait">Luxurious</span>
-                        <span class="trait">Floral</span>
-                        <span class="trait">Refined</span>
+                        <span class="trait" data-it="Lussuoso" data-en="Luxurious">Lussuoso</span>
+                        <span class="trait" data-it="Floreale" data-en="Floral">Floreale</span>
+                        <span class="trait" data-it="Elegante" data-en="Refined">Elegante</span>
                     </div>
                 </div>
             </div>
             <div class="cocktails-footer">
-                <p>Our menu rotates seasonally, featuring rare spirits and house-made infusions</p>
-                <button class="secondary-btn">View Full Menu</button>
+                <p data-it="Il nostro menu cambia stagionalmente, con distillati rari e infusioni fatte in casa" data-en="Our menu rotates seasonally, featuring rare spirits and house-made infusions">Il nostro menu cambia stagionalmente, con distillati rari e infusioni fatte in casa</p>
+                <button class="secondary-btn" data-it="Vedi Menu Completo" data-en="View Full Menu">Vedi Menu Completo</button>
             </div>
         </div>
     </section>
@@ -214,42 +218,42 @@
         <div class="container">
             <div class="section-header">
                 <span class="section-number">03</span>
-                <h2>Prohibition Bites</h2>
+                <h2 data-it="Assaggi del Proibizionismo" data-en="Prohibition Bites">Assaggi del Proibizionismo</h2>
                 <div class="section-line"></div>
-                <p class="section-subtitle">Gourmet Italian fare to complement your cocktails</p>
+                <p class="section-subtitle" data-it="Alta cucina italiana per accompagnare i tuoi cocktail" data-en="Gourmet Italian fare to complement your cocktails">Alta cucina italiana per accompagnare i tuoi cocktail</p>
             </div>
             <div class="food-showcase">
                 <div class="food-column">
                     <div class="food-item">
-                        <h4>Artisan Pizza</h4>
-                        <p>Wood-fired Neapolitan style with creative toppings</p>
+                        <h4 data-it="Pizza Artigianale" data-en="Artisan Pizza">Pizza Artigianale</h4>
+                        <p data-it="Stile napoletano al forno a legna con condimenti creativi" data-en="Wood-fired Neapolitan style with creative toppings">Stile napoletano al forno a legna con condimenti creativi</p>
                     </div>
                     <div class="food-item">
-                        <h4>Gourmet Sandwiches</h4>
-                        <p>Premium Italian ingredients on fresh-baked bread</p>
+                        <h4 data-it="Panini Gourmet" data-en="Gourmet Sandwiches">Panini Gourmet</h4>
+                        <p data-it="Ingredienti italiani premium su pane appena sfornato" data-en="Premium Italian ingredients on fresh-baked bread">Ingredienti italiani premium su pane appena sfornato</p>
                     </div>
                     <div class="food-item">
-                        <h4>Cheese & Charcuterie</h4>
-                        <p>Curated selection of Italian meats and cheeses</p>
+                        <h4 data-it="Formaggi & Salumi" data-en="Cheese & Charcuterie">Formaggi & Salumi</h4>
+                        <p data-it="Selezione curata di salumi e formaggi italiani" data-en="Curated selection of Italian meats and cheeses">Selezione curata di salumi e formaggi italiani</p>
                     </div>
                 </div>
                 <div class="food-visual">
                     <div class="food-circle">
-                        <p>Kitchen Open<br>Until 1:30 AM</p>
+                        <p data-it="Cucina Aperta<br>Fino all'1:30" data-en="Kitchen Open<br>Until 1:30 AM">Cucina Aperta<br>Fino all'1:30</p>
                     </div>
                 </div>
                 <div class="food-column">
                     <div class="food-item">
-                        <h4>Small Plates</h4>
-                        <p>Perfect for sharing and pairing with cocktails</p>
+                        <h4 data-it="Piatti da Condividere" data-en="Small Plates">Piatti da Condividere</h4>
+                        <p data-it="Perfetti per condividere e abbinare ai cocktail" data-en="Perfect for sharing and pairing with cocktails">Perfetti per condividere e abbinare ai cocktail</p>
                     </div>
                     <div class="food-item">
-                        <h4>Seasonal Specials</h4>
-                        <p>Chef's rotating creations using local ingredients</p>
+                        <h4 data-it="Specialità Stagionali" data-en="Seasonal Specials">Specialità Stagionali</h4>
+                        <p data-it="Creazioni dello chef con ingredienti locali di stagione" data-en="Chef's rotating creations using local ingredients">Creazioni dello chef con ingredienti locali di stagione</p>
                     </div>
                     <div class="food-item">
-                        <h4>Late Night Bites</h4>
-                        <p>Comfort food for the after-midnight crowd</p>
+                        <h4 data-it="Stuzzichini Notturni" data-en="Late Night Bites">Stuzzichini Notturni</h4>
+                        <p data-it="Comfort food per il pubblico dopo mezzanotte" data-en="Comfort food for the after-midnight crowd">Comfort food per il pubblico dopo mezzanotte</p>
                     </div>
                 </div>
             </div>
@@ -262,28 +266,28 @@
         <div class="container">
             <div class="section-header light">
                 <span class="section-number">04</span>
-                <h2>Live Entertainment</h2>
+                <h2 data-it="Intrattenimento dal Vivo" data-en="Live Entertainment">Intrattenimento dal Vivo</h2>
                 <div class="section-line"></div>
             </div>
             <div class="events-content">
                 <div class="event-feature">
                     <div class="event-icon">🎷</div>
-                    <h3>Live Jazz Nights</h3>
-                    <p>Sultry saxophones and smooth vocals transport you to the roaring twenties. Check our social media for performance schedules.</p>
+                    <h3 data-it="Serate Jazz dal Vivo" data-en="Live Jazz Nights">Serate Jazz dal Vivo</h3>
+                    <p data-it="Sassofoni sensuali e voci vellutate ti trasportano nei ruggenti anni Venti. Segui i nostri social per il programma." data-en="Sultry saxophones and smooth vocals transport you to the roaring twenties. Check our social media for performance schedules.">Sassofoni sensuali e voci vellutate ti trasportano nei ruggenti anni Venti. Segui i nostri social per il programma.</p>
                 </div>
                 <div class="event-feature">
                     <div class="event-icon">🎩</div>
-                    <h3>Mystery Magicians</h3>
-                    <p>Prepare to be mesmerized by impromptu magic performances that add an extra layer of wonder to your evening.</p>
+                    <h3 data-it="Maghi Misteriosi" data-en="Mystery Magicians">Maghi Misteriosi</h3>
+                    <p data-it="Preparati a essere incantato da performance di magia improvvisate che aggiungono meraviglia alla tua serata." data-en="Prepare to be mesmerized by impromptu magic performances that add an extra layer of wonder to your evening.">Preparati a essere incantato da performance di magia improvvisate che aggiungono meraviglia alla tua serata.</p>
                 </div>
                 <div class="event-feature">
                     <div class="event-icon">🎭</div>
-                    <h3>Special Events</h3>
-                    <p>Private parties, cocktail masterclasses, and themed nights. Follow us for exclusive announcements.</p>
+                    <h3 data-it="Eventi Speciali" data-en="Special Events">Eventi Speciali</h3>
+                    <p data-it="Feste private, masterclass di cocktail e serate a tema. Seguici per annunci esclusivi." data-en="Private parties, cocktail masterclasses, and themed nights. Follow us for exclusive announcements.">Feste private, masterclass di cocktail e serate a tema. Seguici per annunci esclusivi.</p>
                 </div>
             </div>
             <div class="social-callout">
-                <p>Stay in the loop</p>
+                <p data-it="Rimani Aggiornato" data-en="Stay in the loop">Rimani Aggiornato</p>
                 <div class="social-links">
                     <a href="https://www.instagram.com/blindpigroma/" target="_blank" class="social-btn">
                         <span>📷</span> Instagram
@@ -301,30 +305,30 @@
         <div class="container">
             <div class="section-header">
                 <span class="section-number">05</span>
-                <h2>Find The Secret Door</h2>
+                <h2 data-it="Trova La Porta Segreta" data-en="Find The Secret Door">Trova La Porta Segreta</h2>
                 <div class="section-line"></div>
             </div>
             <div class="visit-grid">
                 <div class="visit-info">
                     <div class="info-block">
-                        <h3>Location</h3>
-                        <p>Via La Spezia 72<br>San Giovanni, Rome<br>00182, Italy</p>
-                        <p class="info-hint">🚇 Near Metro Lodi (Line A)</p>
+                        <h3 data-it="Posizione" data-en="Location">Posizione</h3>
+                        <p>Via La Spezia 72<br>San Giovanni, Roma<br>00182, Italia</p>
+                        <p class="info-hint" data-it="🚇 Vicino Metro Lodi (Linea A)" data-en="🚇 Near Metro Lodi (Line A)">🚇 Vicino Metro Lodi (Linea A)</p>
                     </div>
                     <div class="info-block">
-                        <h3>Hours</h3>
-                        <p><strong>Daily:</strong> 18:30 - 02:00</p>
-                        <p><strong>Kitchen:</strong> Until 01:30</p>
-                        <p class="info-hint">🌙 Late night vibes guaranteed</p>
+                        <h3 data-it="Orari" data-en="Hours">Orari</h3>
+                        <p><strong data-it="Tutti i giorni:" data-en="Daily:">Tutti i giorni:</strong> 18:30 - 02:00</p>
+                        <p><strong data-it="Cucina:" data-en="Kitchen:">Cucina:</strong> <span data-it="Fino all'01:30" data-en="Until 01:30">Fino all'01:30</span></p>
+                        <p class="info-hint" data-it="🌙 Atmosfera notturna garantita" data-en="🌙 Late night vibes guaranteed">🌙 Atmosfera notturna garantita</p>
                     </div>
                     <div class="info-block">
-                        <h3>Contact</h3>
+                        <h3 data-it="Contatti" data-en="Contact">Contatti</h3>
                         <p>📞 <a href="tel:+390687750714">+39 06 8775 0714</a></p>
                         <p>📧 reservations@blindpigroma.com</p>
-                        <p class="info-hint">Reservations recommended on weekends</p>
+                        <p class="info-hint" data-it="Prenotazione consigliata nei weekend" data-en="Reservations recommended on weekends">Prenotazione consigliata nei weekend</p>
                     </div>
                     <div class="info-block">
-                        <h3>Follow Us</h3>
+                        <h3 data-it="Seguici" data-en="Follow Us">Seguici</h3>
                         <div class="social-icons">
                             <a href="https://www.instagram.com/blindpigroma/" target="_blank">Instagram</a>
                             <a href="https://www.facebook.com/blindpigroma/" target="_blank">Facebook</a>
@@ -344,7 +348,7 @@
                             referrerpolicy="no-referrer-when-downgrade">
                         </iframe>
                     </div>
-                    <p class="map-caption">Look for the unmarked door with a small pig symbol</p>
+                    <p class="map-caption" data-it="Cerca la porta senza insegna con un piccolo simbolo del maiale" data-en="Look for the unmarked door with a small pig symbol">Cerca la porta senza insegna con un piccolo simbolo del maiale</p>
                 </div>
             </div>
         </div>
@@ -367,12 +371,12 @@
                     <h3>Blind Pig Roma</h3>
                 </div>
                 <div class="footer-text">
-                    <p>"In the shadows we thrive, in secrecy we flourish."</p>
-                    <p class="footer-small">© 2025 Blind Pig Roma. All secrets reserved.</p>
+                    <p data-it="Nell'ombra prosperiamo, nella segretezza fiorisciamo." data-en="In the shadows we thrive, in secrecy we flourish.">"Nell'ombra prosperiamo, nella segretezza fiorisciamo."</p>
+                    <p class="footer-small" data-it="© 2025 Blind Pig Roma. Tutti i segreti riservati." data-en="© 2025 Blind Pig Roma. All secrets reserved.">© 2025 Blind Pig Roma. Tutti i segreti riservati.</p>
                 </div>
             </div>
             <div class="footer-disclaimer">
-                <p>Please drink responsibly. Must be 18+ to enter.</p>
+                <p data-it="Bevi responsabilmente. È necessario avere almeno 18 anni per entrare." data-en="Please drink responsibly. Must be 18+ to enter.">Bevi responsabilmente. È necessario avere almeno 18 anni per entrare.</p>
             </div>
         </div>
     </footer>

@@ -306,6 +306,46 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // ==========================================
+    // LANGUAGE TOGGLE
+    // ==========================================
+    const langToggle = document.getElementById('lang-toggle');
+    let currentLang = 'it'; // Default language is Italian
+
+    const updateLanguage = () => {
+        const elements = document.querySelectorAll('[data-it][data-en]');
+
+        elements.forEach(el => {
+            if (currentLang === 'it') {
+                el.textContent = el.getAttribute('data-it');
+            } else {
+                el.textContent = el.getAttribute('data-en');
+            }
+        });
+
+        // Update button to show the OPPOSITE language (what you can switch TO)
+        const flagSpan = langToggle.querySelector('.flag');
+        const langText = langToggle.querySelector('.lang-text');
+
+        if (currentLang === 'it') {
+            // Currently in Italian, show option to switch to English
+            flagSpan.textContent = '🇬🇧';
+            langText.textContent = 'EN';
+        } else {
+            // Currently in English, show option to switch to Italian
+            flagSpan.textContent = '🇮🇹';
+            langText.textContent = 'IT';
+        }
+    };
+
+    langToggle.addEventListener('click', () => {
+        currentLang = currentLang === 'it' ? 'en' : 'it';
+        updateLanguage();
+    });
+
+    // Initialize with correct button state
+    updateLanguage();
+
+    // ==========================================
     // CONSOLE EASTER EGG
     // ==========================================
     console.log('%c🐷 Welcome to Blind Pig Roma 🐷', 'font-size: 20px; color: #d4af37; font-weight: bold;');
