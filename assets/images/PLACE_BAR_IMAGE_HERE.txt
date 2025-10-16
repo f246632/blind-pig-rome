@@ -1,0 +1,14 @@
+INSTRUCTIONS:
+==============
+
+Please save the bar bottles image as:
+assets/images/bar-bottles.jpg
+
+The CSS is already configured to use this image as the hero background!
+
+The image should be:
+- High resolution (at least 1920px wide)
+- JPG format
+- Named exactly: bar-bottles.jpg
+
+Once you place the image here, refresh the page and it will appear as the hero background with a yellow/dark overlay.
