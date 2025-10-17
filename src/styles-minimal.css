@@ -510,7 +510,7 @@ section {
     content: '';
     position: absolute;
     inset: 0;
-    background-image: url('../assets/images/bar-bottles-bg.jpg');
+    background-image: url('../assets/images/bar-bottles-real.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
