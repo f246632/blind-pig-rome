@@ -124,83 +124,11 @@ document.addEventListener('DOMContentLoaded', () => {
         observer.observe(el);
     });
 
-    // ==========================================
-    // PARALLAX EFFECT
-    // ==========================================
-    window.addEventListener('scroll', () => {
-        const scrolled = window.pageYOffset;
-        const parallaxElements = document.querySelectorAll('.hero, .cocktails-bg, .events-overlay');
+    // Parallax removed for minimal design
 
-        parallaxElements.forEach(el => {
-            const speed = 0.5;
-            el.style.transform = `translateY(${scrolled * speed}px)`;
-        });
-    });
+    // Cursor glow removed for minimal design
 
-    // ==========================================
-    // CURSOR GLOW EFFECT
-    // ==========================================
-    const createCursorGlow = () => {
-        const cursorGlow = document.createElement('div');
-        cursorGlow.style.cssText = `
-            position: fixed;
-            width: 20px;
-            height: 20px;
-            border-radius: 50%;
-            background: radial-gradient(circle, rgba(212, 175, 55, 0.4), transparent);
-            pointer-events: none;
-            z-index: 9998;
-            transition: transform 0.1s ease;
-            mix-blend-mode: screen;
-        `;
-        document.body.appendChild(cursorGlow);
-
-        document.addEventListener('mousemove', (e) => {
-            cursorGlow.style.left = `${e.clientX - 10}px`;
-            cursorGlow.style.top = `${e.clientY - 10}px`;
-        });
-
-        // Enlarge on interactive elements
-        const interactiveElements = document.querySelectorAll('a, button, .cocktail-card, .event-feature');
-        interactiveElements.forEach(el => {
-            el.addEventListener('mouseenter', () => {
-                cursorGlow.style.transform = 'scale(3)';
-            });
-            el.addEventListener('mouseleave', () => {
-                cursorGlow.style.transform = 'scale(1)';
-            });
-        });
-    };
-
-    // Only on desktop
-    if (window.innerWidth > 768) {
-        createCursorGlow();
-    }
-
-    // ==========================================
-    // COCKTAIL CARD TILT EFFECT
-    // ==========================================
-    const cocktailCards = document.querySelectorAll('.cocktail-card');
-
-    cocktailCards.forEach(card => {
-        card.addEventListener('mousemove', (e) => {
-            const rect = card.getBoundingClientRect();
-            const x = e.clientX - rect.left;
-            const y = e.clientY - rect.top;
-
-            const centerX = rect.width / 2;
-            const centerY = rect.height / 2;
-
-            const rotateX = (y - centerY) / 20;
-            const rotateY = (centerX - x) / 20;
-
-            card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateY(-10px)`;
-        });
-
-        card.addEventListener('mouseleave', () => {
-            card.style.transform = 'perspective(1000px) rotateX(0) rotateY(0) translateY(0)';
-        });
-    });
+    // Tilt effect removed for minimal design - simple hover only
 
     // ==========================================
     // TYPING EFFECT FOR HERO TAGLINE
@@ -245,23 +173,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // ==========================================
-    // GLITCH TEXT EFFECT
-    // ==========================================
-    const glitchText = document.querySelector('.glitch');
-
-    setInterval(() => {
-        if (Math.random() > 0.95) {
-            glitchText.style.textShadow = `
-                ${Math.random() * 10 - 5}px ${Math.random() * 10 - 5}px 0 #d4af37,
-                ${Math.random() * 10 - 5}px ${Math.random() * 10 - 5}px 0 #8b0000
-            `;
-
-            setTimeout(() => {
-                glitchText.style.textShadow = '0 0 10px var(--gold), 0 0 20px var(--gold), 0 0 40px var(--deep-red)';
-            }, 100);
-        }
-    }, 3000);
+    // Glitch effect removed for minimal design
 
     // ==========================================
     // SOUND EFFECTS (Optional - requires audio files)
